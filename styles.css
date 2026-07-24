@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+body.azteca {
+    background: #003b5c;
+}
+
+body.spin {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 32px 24px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 8px;
+    color: #2d2d2d;
+    font-weight: 900;
+}
+
+.slogan {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 6px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.bank-section {
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.azteca .bank-section {
+    background: #f4f7fa;
+}
+
+.spin .bank-section {
+    background: #f0f8ff;
+}
+
+.bank-header {
+    text-align: center;
+    padding: 16px 20px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+
+.bank-header.azteca {
+    background: #003b5c;
+    box-shadow: 0 4px 16px rgba(0, 59, 92, 0.3);
+}
+
+.bank-header.spin {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    box-shadow: 0 4px 16px rgba(0, 119, 182, 0.3);
+}
+
+.bank-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.bank-logo span {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.info-group:last-child {
+    margin-bottom: 0;
+}
+
+.info-group label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #999;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.value-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.card-number {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2d2d2d;
+    letter-spacing: 3px;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+}
+
+.copy-btn {
+    background: #2d2d2d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.copy-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.copy-btn.copied {
+    background: #27ae60;
+}
+
+.beneficiary {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px 0 0;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 2px;
+    font-weight: 300;
+}

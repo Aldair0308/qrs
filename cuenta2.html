@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pueblo - SPIN by OXXO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="spin">
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <h1>EL PUEBLO</h1>
+                <p class="slogan">Datos para transferencia</p>
+            </div>
+
+            <div class="bank-section">
+                <div class="bank-header spin">
+                    <div class="bank-logo">SPIN <span>by OXXO</span></div>
+                </div>
+
+                <div class="info-group">
+                    <label>Tarjeta</label>
+                    <div class="value-row">
+                        <div class="card-number">4217&nbsp;4700&nbsp;5717&nbsp;0512</div>
+                        <button class="copy-btn" onclick="copyText('4217470057170512', this)">Copiar</button>
+                    </div>
+                </div>
+
+                <div class="info-group">
+                    <label>Beneficiario</label>
+                    <div class="value-row">
+                        <div class="beneficiary">Javier&nbsp;Morales&nbsp;Gonzalez</div>
+                        <button class="copy-btn" onclick="copyText('Javier Morales Gonzalez', this)">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Gracias por su preferencia</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copiado!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copiar';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
