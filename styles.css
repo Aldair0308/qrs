@@ -120,7 +120,8 @@ body.spin {
 
 .card-number {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12px;
     margin-bottom: 10px;
 }
 
