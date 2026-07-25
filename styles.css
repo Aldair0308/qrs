@@ -119,20 +119,25 @@ body.spin {
 }
 
 .card-number {
-    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-number span {
+    font-size: 17px;
     font-weight: 700;
     color: #2d2d2d;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-family: 'Courier New', monospace;
-    margin-bottom: 8px;
 }
 
 .beneficiary {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: #2d2d2d;
     letter-spacing: 1px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .copy-btn {

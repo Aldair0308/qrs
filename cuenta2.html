@@ -21,14 +21,16 @@
 
                 <div class="info-group">
                     <label>Tarjeta</label>
-                    <div class="card-number">4217 4700 5717 0512</div>
-                    <button class="copy-btn" onclick="copyText('4217470057170512', this)">Copiar</button>
+                    <div class="card-number">
+                        <span>4217</span><span>4700</span><span>5717</span><span>0512</span>
+                    </div>
+                    <button class="copy-btn" data-label="Copiar tarjeta" onclick="copyText('4217470057170512', this)">Copiar tarjeta</button>
                 </div>
 
                 <div class="info-group">
                     <label>Beneficiario</label>
                     <div class="beneficiary">Javier Morales Gonzalez</div>
-                    <button class="copy-btn" onclick="copyText('Javier Morales Gonzalez', this)">Copiar</button>
+                    <button class="copy-btn" data-label="Copiar nombre" onclick="copyText('Javier Morales Gonzalez', this)">Copiar nombre</button>
                 </div>
             </div>
 
@@ -43,7 +45,7 @@
                 btn.textContent = 'Copiado!';
                 btn.classList.add('copied');
                 setTimeout(() => {
-                    btn.textContent = 'Copiar';
+                    btn.textContent = btn.dataset.label;
                     btn.classList.remove('copied');
                 }, 2000);
             });
