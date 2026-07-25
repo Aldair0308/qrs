@@ -23,7 +23,7 @@ body.spin {
 
 .container {
     width: 100%;
-    max-width: 460px;
+    max-width: 400px;
 }
 
 .card {
@@ -101,6 +101,7 @@ body.spin {
 
 .info-group {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .info-group:last-child {
@@ -117,35 +118,35 @@ body.spin {
     font-weight: 500;
 }
 
-.value-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
 .card-number {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 700;
     color: #2d2d2d;
     letter-spacing: 3px;
     font-family: 'Courier New', monospace;
-    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.beneficiary {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
 .copy-btn {
+    display: inline-block;
     background: #2d2d2d;
     color: #fff;
     border: none;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 11px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
     letter-spacing: 1px;
-    white-space: nowrap;
-    flex-shrink: 0;
 }
 
 .copy-btn:hover {
@@ -155,14 +156,6 @@ body.spin {
 
 .copy-btn.copied {
     background: #27ae60;
-}
-
-.beneficiary {
-    font-size: 16px;
-    font-weight: 600;
-    color: #2d2d2d;
-    letter-spacing: 1px;
-    white-space: nowrap;
 }
 
 .footer {
